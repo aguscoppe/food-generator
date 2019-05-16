@@ -1,0 +1,148 @@
+.color-palette1 {
+  color: #e27d60;
+  color: #85dcb8;
+  color: #e8a87c;
+  color: #c38d9e;
+  color: #41b3a3;
+}
+
+.color-palette2 {
+  color: #f78888;
+  color: #f3d250;
+  color: #ececec;
+  color: #90ccf4;
+  color: #5da2d5;
+}
+
+@font-face {
+  font-family: "five_minutes";
+  src: url("../fonts/five_minutes-webfont.woff2") format("woff2"),
+    url("../fonts/five_minutes-webfont.woff") format("woff"),
+    url("../fonts/Five\ Minutes.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "lato";
+  src: url("../fonts/Lato-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "lato-light";
+  src: url("../fonts/Lato-Light.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "lato-hairline";
+  src: url("../fonts/Lato-Hairline.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* general styling */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f3d250;
+  font-family: "lato-hairline";
+  font-size: 3.2rem;
+  margin-top: 25vh;
+  text-transform: uppercase;
+}
+
+h1 {
+  color: #2b2b2b;
+  text-align: center;
+}
+
+div > a {
+  text-decoration: none;
+  color: #2b2b2b;
+  text-align: center;
+}
+
+/* btns layout */
+.options {
+  padding-top: 5vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.inside {
+  padding-top: 75%;
+}
+
+/* text inside btns */
+
+div > p {
+  font-weight: bold;
+  font-size: 2rem;
+  letter-spacing: 2px;
+}
+
+/* savory btn*/
+.savory {
+  height: 300px;
+  width: 300px;
+  background-image: url(../img/bf_bw.png);
+  background-size: 300px;
+  border-radius: 50%;
+}
+
+.savory:hover {
+  transition: all 0.4s linear;
+  background-image: url(../img/bf.png);
+}
+
+/* sweet btn*/
+.sweet {
+  height: 300px;
+  width: 300px;
+  background-image: url(../img/donut_bw.png);
+  background-size: 300px;
+  border-radius: 50%;
+}
+
+.sweet:hover {
+  transition: all 0.4s linear;
+  background-image: url(../img/donut.png);
+}
+
+/* footer */
+footer {
+  text-transform: initial;
+  font-size: 1rem;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #2b2b2b;
+  color: #ececec;
+  font-family: "lato-light";
+  font-weight: normal;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.fa-github {
+  padding-left: 5px;
+  font-size: 1.5rem;
+  color: #ececec;
+  text-decoration: none;
+}
+
+.fa-github:hover {
+  transition: all 0.2s linear;
+  color: #f3d250;
+}

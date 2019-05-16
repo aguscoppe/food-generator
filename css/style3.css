@@ -1,0 +1,291 @@
+/*my fonts*/
+@font-face {
+  font-family: "lato";
+  src: url("../fonts/Lato-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "lato-light";
+  src: url("../fonts/Lato-Light.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "lato-hairline";
+  src: url("../fonts/Lato-Hairline.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* general styling */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* savory & sweet color bg */
+
+.pink {
+  background-color: #f788cd;
+}
+
+.blue {
+  background-color: #5da2d5;
+}
+
+body {
+  text-transform: uppercase;
+  background-color: #5da2d5;
+  color: #ececec;
+  font-family: "lato-hairline";
+  font-weight: bolder;
+  font-size: 2rem;
+  text-align: center;
+}
+
+/* instructions */
+h1 {
+  margin-top: 4vh;
+  padding: 6vh;
+}
+
+/* start btn layout */
+.btn {
+  font-family: "lato";
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #2b2b2b;
+  background-color: #f3d250;
+  font-weight: bold;
+  letter-spacing: 5px;
+  padding: 25px 72px;
+  margin-top: 50vh;
+  border-radius: 50px;
+}
+
+.btn:hover {
+  transition: all 0.2s linear;
+  background-color: rgb(236, 236, 236);
+  color: #2b2b2b;
+}
+
+/*sweet and savory empty div*/
+#sweet-empty,
+#savory-empty {
+  padding-top: 12vh;
+  margin: 0 auto;
+  height: 350px;
+  width: 350px;
+}
+
+/*food images general style*/
+.food-box {
+  margin: 0 auto;
+  height: 350px;
+  width: 350px;
+}
+
+/*food images size*/
+.food-size {
+  background-size: 350px;
+  border: 5px #ececec solid;
+  border-radius: 5px;
+}
+
+/*sweet food images*/
+#icecream {
+  background-image: url(../img/1.jpg);
+}
+#applepie {
+  background-image: url(../img/2.jpg);
+}
+#brownies {
+  background-image: url(../img/3.jpg);
+}
+#chococake {
+  background-image: url(../img/4.jpg);
+}
+#cupcakes {
+  background-image: url(../img/5.jpg);
+}
+#cookies {
+  background-image: url(../img/6.jpg);
+}
+#bun {
+  background-image: url(../img/7.jpg);
+}
+#milkshake {
+  background-image: url(../img/8.jpg);
+}
+#donut {
+  background-image: url(../img/9.jpg);
+}
+#popcorn {
+  background-image: url(../img/10.png);
+}
+#cheesecake {
+  background-image: url(../img/11.jpg);
+}
+#pancakes {
+  background-image: url(../img/12.jpg);
+}
+#hotcakes {
+  background-image: url(../img/13.jpg);
+}
+#cotton {
+  background-image: url(../img/14.jpg);
+}
+#smores {
+  background-image: url(../img/15.jpg);
+}
+#waffles {
+  background-image: url(../img/16.jpg);
+}
+#churros {
+  background-image: url(../img/17.jpg);
+}
+#strawberries {
+  background-image: url(../img/18.jpg);
+}
+#icecreamsandwich {
+  background-image: url(../img/19.jpg);
+}
+#fruitsalad {
+  background-image: url(../img/20.jpg);
+}
+#lemonpie {
+  background-image: url(../img/21.jpg);
+}
+
+/*savory food images*/
+#burger {
+  background-image: url(../img/22.jpg);
+}
+#mac {
+  background-image: url(../img/23.jpg);
+}
+#nuggets {
+  background-image: url(../img/24.jpeg);
+}
+#spaghetti {
+  background-image: url(../img/25.jpg);
+}
+#caesar {
+  background-image: url(../img/26.jpg);
+}
+#pizza {
+  background-image: url(../img/27.jpg);
+}
+#steak {
+  background-image: url(../img/28.jpg);
+}
+#mashed {
+  background-image: url(../img/29.jpg);
+}
+#tacos {
+  background-image: url(../img/30.jpg);
+}
+#ramen {
+  background-image: url(../img/31.jpg);
+}
+#sushi {
+  background-image: url(../img/32.jpg);
+}
+#lasagna {
+  background-image: url(../img/33.jpg);
+}
+#sticks {
+  background-image: url(../img/34.jpg);
+}
+#grilled {
+  background-image: url(../img/35.jpg);
+}
+#fajitas {
+  background-image: url(../img/36.jpg);
+}
+#nachos {
+  background-image: url(../img/37.jpg);
+}
+#wings {
+  background-image: url(../img/38.jpg);
+}
+#ribs {
+  background-image: url(../img/39.jpg);
+}
+#turkey {
+  background-image: url(../img/40.jpg);
+}
+#shrimp {
+  background-image: url(../img/41.jpg);
+}
+#greek {
+  background-image: url(../img/42.jpg);
+}
+
+/* food text */
+div > p {
+  font-family: "lato-light";
+  margin-top: 1.5vh;
+  font-size: 1.6rem;
+  text-transform: initial;
+  color: #2b2b2b;
+  background-color: #ececec;
+  display: inline-block;
+}
+
+/* change to sweet foods link */
+h4 {
+  margin-top: 12vh;
+  margin-bottom: 4vh;
+}
+
+a {
+  color: #ececec;
+}
+
+a:hover {
+  transition: all 0.2s linear;
+  text-decoration: none;
+}
+
+/* sweet & savory link hover */
+
+.pinkhover a:hover {
+  background-color: #f788cd;
+}
+
+.bluehover a:hover {
+  background-color: #5da2d5;
+}
+
+/* footer */
+footer {
+  text-transform: initial;
+  font-size: 1rem;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #2b2b2b;
+  color: #ececec;
+  font-family: "lato-light";
+  font-weight: normal;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.fa-github {
+  padding-left: 5px;
+  font-size: 1.5rem;
+  color: #ececec;
+  text-decoration: none;
+}
+
+.fa-github:hover {
+  transition: all 0.2s linear;
+  color: #f3d250;
+}
