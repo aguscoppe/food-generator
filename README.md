@@ -6,4 +6,4 @@
 
 <p>In order to create this project I used <strong>HTML</strong>, <strong>CSS</strong>,and some <strong>JavaScript</strong>.</p>
 
-<p>Although the page is not 100% responsive, it is a feature that I wanted to add.</p>
+<p><strong>UPDATE!</strong>: the site is now responsive.</p>
