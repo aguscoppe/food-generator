@@ -125,8 +125,8 @@ footer > p {
   }
   .container {
     text-align: initial;
-  width: initial;
-  margin: initial;
+    width: initial;
+    margin: initial;
     text-align: center;
     width: auto;
     margin-top: 5vh;
@@ -139,42 +139,43 @@ footer > p {
     width: auto;
   }
 
-@media (max-width: 780px) {
-  h1{
-    font-size: 10rem;
-    text-align: center;
-    margin-top: 8vh;
+  @media (max-width: 780px) {
+    h1 {
+      font-size: 10rem;
+      text-align: center;
+      margin-top: 8vh;
+    }
+    div > a {
+      font-size: 1rem;
+    }
+    .btn {
+      padding: 18px 70px;
+    }
   }
-  div > a {
-    font-size: 1rem;
-  }
-  .btn{
-    padding: 18px 70px;
-  }
-}
 
-@media (max-width: 612px) {
-  h1{
-    font-size: 8rem;
-    margin-top: 10vh;
-    margin-bottom: 2vh;
+  @media (max-width: 612px) {
+    h1 {
+      font-size: 8rem;
+      margin-top: 10vh;
+      margin-bottom: 2vh;
+    }
   }
-}
 
-@media (max-width: 450px) {
-  h1{
-    font-size: 6rem;
+  @media (max-width: 450px) {
+    h1 {
+      font-size: 6rem;
+    }
+    .btn {
+      padding: 16px 60px;
+    }
   }
-  .btn{
-    padding: 16px 60px;
-  }
-}
 
-@media (max-width: 400px) {
-  h1{
-    font-size: 5rem;
-  }
-  .btn{
-    padding: 15px 50px;
+  @media (max-width: 400px) {
+    h1 {
+      font-size: 5rem;
+    }
+    .btn {
+      padding: 15px 50px;
+    }
   }
 }

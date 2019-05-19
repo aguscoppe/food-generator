@@ -1,19 +1,3 @@
-.color-palette1 {
-  color: #e27d60;
-  color: #85dcb8;
-  color: #e8a87c;
-  color: #c38d9e;
-  color: #41b3a3;
-}
-
-.color-palette2 {
-  color: #f78888;
-  color: #f3d250;
-  color: #ececec;
-  color: #90ccf4;
-  color: #5da2d5;
-}
-
 @font-face {
   font-family: "five_minutes";
   src: url("../fonts/five_minutes-webfont.woff2") format("woff2"),
@@ -90,13 +74,18 @@ div > p {
   letter-spacing: 2px;
 }
 
-/* savory btn*/
-.savory {
+/* sweet & savory btns */
+.savory,
+.sweet {
   height: 300px;
   width: 300px;
-  background-image: url(../img/bf_bw.png);
   background-size: 300px;
   border-radius: 50%;
+}
+
+/* savory btn*/
+.savory {
+  background-image: url(../img/bf_bw.png);
 }
 
 .savory:hover {
@@ -106,11 +95,7 @@ div > p {
 
 /* sweet btn*/
 .sweet {
-  height: 300px;
-  width: 300px;
   background-image: url(../img/donut_bw.png);
-  background-size: 300px;
-  border-radius: 50%;
 }
 
 .sweet:hover {
@@ -122,7 +107,7 @@ div > p {
 footer {
   text-transform: initial;
   font-size: 1rem;
-  position: absolute;
+  position: fixed;
   right: 0;
   bottom: 0;
   left: 0;
@@ -145,4 +130,40 @@ footer {
 .fa-github:hover {
   transition: all 0.2s linear;
   color: #f3d250;
+}
+
+/* media queries */
+@media (max-width: 660px) {
+  body {
+    font-size: 2rem;
+  }
+  .savory,
+  .sweet {
+    height: 220px;
+    width: 220px;
+    background-size: 220px;
+  }
+
+  .savory {
+    background-image: url(../img/bf.png);
+  }
+
+  .sweet {
+    background-image: url(../img/donut.png);
+  }
+  .sweet:hover {
+    transition: none;
+  }
+
+  @media (max-width: 420px) {
+    .savory,
+    .sweet {
+      height: 150px;
+      width: 150px;
+      background-size: 150px;
+    }
+    div > p {
+      font-size: 1rem;
+    }
+  }
 }
