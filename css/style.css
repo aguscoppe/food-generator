@@ -92,7 +92,7 @@ div > a {
 /* footer */
 footer > p {
   text-transform: initial;
-  position: absolute;
+  position: fixed;
   right: 0;
   bottom: 0;
   left: 0;
@@ -116,4 +116,65 @@ footer > p {
 .fa-github:hover {
   transition: all 0.2s linear;
   color: #b7484e;
+}
+
+/* media queries */
+@media (max-width: 1470px) {
+  body {
+    background-image: url(../img/bg50.png);
+  }
+  .container {
+    text-align: initial;
+  width: initial;
+  margin: initial;
+    text-align: center;
+    width: auto;
+    margin-top: 5vh;
+  }
+  .btn {
+    text-align: initial;
+    width: initial;
+    margin: initial;
+    text-align: center;
+    width: auto;
+  }
+
+@media (max-width: 780px) {
+  h1{
+    font-size: 10rem;
+    text-align: center;
+    margin-top: 8vh;
+  }
+  div > a {
+    font-size: 1rem;
+  }
+  .btn{
+    padding: 18px 70px;
+  }
+}
+
+@media (max-width: 612px) {
+  h1{
+    font-size: 8rem;
+    margin-top: 10vh;
+    margin-bottom: 2vh;
+  }
+}
+
+@media (max-width: 450px) {
+  h1{
+    font-size: 6rem;
+  }
+  .btn{
+    padding: 16px 60px;
+  }
+}
+
+@media (max-width: 400px) {
+  h1{
+    font-size: 5rem;
+  }
+  .btn{
+    padding: 15px 50px;
+  }
 }
