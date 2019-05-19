@@ -289,3 +289,70 @@ footer {
   transition: all 0.2s linear;
   color: #f3d250;
 }
+/* media queries */
+@media (max-width: 1651px) {
+  body {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  body {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 743px) {
+  body {
+    padding: 0;
+  }
+  h1 {
+    padding-top: 0px;
+    margin-top: 25px;
+  }
+  .btn {
+    padding: 20px 55px;
+  }
+  body,
+  .btn {
+    font-size: 1rem;
+  }
+  div > p {
+    font-size: 1.2rem;
+  }
+  #sweet-empty,
+  #savory-empty {
+    height: 300px;
+    width: 300px;
+  }
+
+  .food-box {
+    height: 300px;
+    width: 300px;
+  }
+
+  .food-size {
+    background-size: 300px;
+  }
+}
+
+@media (max-width: 360px) {
+  body,
+  .btn {
+    font-size: 0.8rem;
+  }
+  #sweet-empty,
+  #savory-empty {
+    height: 250px;
+    width: 250px;
+  }
+
+  .food-box {
+    height: 250px;
+    width: 250px;
+  }
+
+  .food-size {
+    background-size: 250px;
+  }
+}
