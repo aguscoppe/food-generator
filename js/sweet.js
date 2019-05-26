@@ -1,105 +1,43 @@
-//variables for sweet start btn & empty div
-var sweetBtn = document.getElementById("sweet-start");
-var randomSweetResult = document.getElementById("sweet-empty");
+const btn = document.getElementById("sweet-start");
+const randomResult = document.getElementById("sweet-empty");
 
-//variable with sweet food array
-var sweetFood = [
-  {
-    name: "Ice cream",
-    code: "icecream"
-  },
-  {
-    name: "Apple pie",
-    code: "applepie"
-  },
-  {
-    name: "Brownies",
-    code: "brownies"
-  },
-  {
-    name: "Chocolate cake",
-    code: "chococake"
-  },
-  {
-    name: "Cupcakes",
-    code: "cupcakes"
-  },
-  {
-    name: "Chocolate chip cookies",
-    code: "cookies"
-  },
-  {
-    name: "Cinnamon bun",
-    code: "bun"
-  },
-  {
-    name: "Milkshake",
-    code: "milkshake"
-  },
-  {
-    name: "Doughnuts",
-    code: "donut"
-  },
-  {
-    name: "Popcorn",
-    code: "popcorn"
-  },
-  {
-    name: "Cheesecake",
-    code: "cheesecake"
-  },
-  {
-    name: "Blueberry pancakes",
-    code: "pancakes"
-  },
-  {
-    name: "Hot cakes",
-    code: "hotcakes"
-  },
-  {
-    name: "Cotton candy",
-    code: "cotton"
-  },
-  {
-    name: "S'mores dip",
-    code: "smores"
-  },
-  {
-    name: "Waffles",
-    code: "waffles"
-  },
-  {
-    name: "Churros",
-    code: "churros"
-  },
-  {
-    name: "Strawberries and whipped cream",
-    code: "strawberries"
-  },
-  {
-    name: "Ice cream sandwich",
-    code: "icecreamsandwich"
-  },
-  {
-    name: "Fruit salad",
-    code: "fruitsalad"
-  },
-  {
-    name: "Lemon pie",
-    code: "lemonpie"
+class Food {
+  constructor(name, code) {
+    this.name = name;
+    this.code = code;
   }
+}
+
+const foodArray = [
+  new Food("Ice cream", "icecream"),
+  new Food("Apple pie", "applepie"),
+  new Food("Brownies", "brownies"),
+  new Food("Chocolate cake", "chococake"),
+  new Food("Cupcakes", "cupcakes"),
+  new Food("Chocolate chip cookies", "cookies"),
+  new Food("Cinnamon bun", "bun"),
+  new Food("Milkshake", "milkshake"),
+  new Food("Doughnuts", "donut"),
+  new Food("Popcorn", "popcorn"),
+  new Food("Cheesecake", "cheesecake"),
+  new Food("Blueberry pancakes", "pancakes"),
+  new Food("Hot cakes", "hotcakes"),
+  new Food("Cotton candy", "cotton"),
+  new Food("S'mores dip", "smores"),
+  new Food("Waffles", "waffles"),
+  new Food("Churros", "churros"),
+  new Food("Strawberries and whipped cream", "strawberries"),
+  new Food("Ice cream sandwich", "icecreamsandwich"),
+  new Food("Fruit salad", "fruitsalad"),
+  new Food("Lemon pie", "lemonpie")
 ];
 
-// calling event on click
-sweetBtn.addEventListener("click", getSweetFood);
+btn.addEventListener("click", getFood);
 
-// creating function to get random sweet food
-function getSweetFood(e) {
-  // var that holds result from array
-  var sweetFoodResult = sweetFood[Math.floor(Math.random() * sweetFood.length)];
+function getFood(e) {
+  let foodResult = foodArray[Math.floor(Math.random() * foodArray.length)];
 
-  // changing inner html of empty div to get food image
-  randomSweetResult.innerHTML = `<div class="food-box food-size" id=${
-    sweetFoodResult.code
-  }></div><p>${sweetFoodResult.name}</p>`;
+  randomResult.innerHTML = `<div class="food-box food-size" 
+  id=${foodResult.code}></div>
+  <p>${foodResult.name}</p>`;
 }
